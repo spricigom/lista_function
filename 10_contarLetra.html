@@ -6,11 +6,20 @@
     */
 
     //Entrada
+//Entrada
 
+let palavra = prompt(`Insira sua frase ou palavra`);
 
-    //Processamento
+let letra = prompt(`Insira a letra que voce quer ver quantas vezes se repete`);
 
-
-    //Saída
-
+    function repetidas(palavra, letra){
+        contador = 0
+        for(l of palavra){
+            if(l == letra){
+                contador++
+            }
+        }
+        return(contador)
+    }
+    alert(`A letra se repete ${repetidas(palavra, letra)} vezes`);
 </script>

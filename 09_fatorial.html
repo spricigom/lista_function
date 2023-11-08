@@ -5,11 +5,18 @@
     */
 
     //Entrada
-
+    const num = Number(prompt("Informe um npumero para eu calcular o fatorial"));
 
     //Processamento
-
+    function fatorial(numero) {
+        if (numero == 1){
+            return 1;
+        }
+        else {
+            return numero * fatorial(numero - 1);
+        }
+    }
 
     //Saída
-
+    document.write(fatorial(num));
 </script>
