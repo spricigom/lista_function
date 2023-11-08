@@ -5,11 +5,18 @@
     */
 
     //Entrada
+    function parImpar(params) {
+        switch (numero%2) {
+            case 0:
+                alert ("é par");
+                break;
+        
+            default:
+                alert("é impar");
+                break;
+        }
+    }
+    const numero = Number(prompt("informe um numero"));
 
-
-    //Processamento
-
-
-    //Saída
-
+    parImpar(numero);
 </script>

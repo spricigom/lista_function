@@ -7,11 +7,20 @@
     */
 
     //Entrada
-
+    const palavra = prompt('Informe uma palavra que retornarei quantas vogais há.').toLowerCase().trim();
+    let vogais = 0;
 
     //Processamento
-
+    function qtd(vogal){
+        for (let i = 0; i < vogal.length; i++) {
+            if(vogal[i] == "a" || vogal[i] == "e"|| vogal[i] == "i" || vogal[i] == "o" || vogal[i] == "u"){
+                vogais++;
+            }    
+            
+         }
+         alert(`Está palavra tem ${vogais} vogais`);
+    }
 
     //Saída
-
+    qtd(palavra)
 </script>

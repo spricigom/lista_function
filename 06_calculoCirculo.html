@@ -8,11 +8,18 @@
     */
 
     //Entrada
-
+    const raio = Number(prompt("Informe o raio do circulo"));
 
     //Processamento
-
-
+    function area (r){
+        let areaT = 3.14 * r ** 2;
+        alert (`A área deste circulo é ${areaT}`);
+    let peri = 2 * 3.14 * r;
+        alert(`O perímetro desse circulo é:${peri}`);
+    }
+   
+    
     //Saída
+     area(raio);
 
 </script>
