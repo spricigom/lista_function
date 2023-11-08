@@ -5,11 +5,18 @@
     */
 
     //Entrada
-
-
+    const num = Number(prompt("Informe um número e digo se é ou não primo"));
+    let primo = 0;
     //Processamento
-
+    function validador(numero){
+        for (let i = 1; i < numero; i++) {
+            if(numero % i == 0){ primo++ }
+            
+        }
+        if(primo <= 2){ alert("Este numero é Primo")}
+        else { alert("Este numero não é primo")}
+    }
 
     //Saída
-
+    validador(num);
 </script>
